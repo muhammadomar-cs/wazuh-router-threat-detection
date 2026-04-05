@@ -1,0 +1,8 @@
+! Cisco 3725 syslog configuration
+conf t
+logging host 150.1.7.99
+logging trap informational
+login on-failure log
+service timestamps log datetime msec
+end
+write memory
